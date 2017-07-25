@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/example"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:paddingLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_toStartOf="@+id/date"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/due_date"
+        android:text="12/31"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/btnDelete"
+        android:layout_alignBottom="@+id/btnDelete"
+        android:layout_toLeftOf="@+id/btnDelete"
+        android:layout_toStartOf="@+id/btnDelete"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:onClick="deleteTask"
+        android:text="X"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

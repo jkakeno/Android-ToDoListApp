@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="example">Task Name</string>
+    <string name="due_date">Due Date</string>
+    <string name="add_mark">+</string>
+</resources>
